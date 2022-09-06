@@ -1,4 +1,4 @@
-# threat_intel
+# The Watchkeeper
 ## threat intelligence gatherer
 
 Clone this repository
@@ -9,6 +9,6 @@ Make the python script executable
 Run it with the `-h` to see the available options
 ```
 cd threat_intel
-chmod +x threat_intel.py
-./threat_intel.py -h
+chmod +x watchkeeper.py
+./watchkeeper.py -h
 ```
