@@ -60,11 +60,11 @@ def main(argv):
         arguments, vaules = getopt.getopt(argv, options, long_options)
         for current, currentvaule in arguments:
             if current in ('-h', '--help'):
-                print('threat_intel.py -u    --update   (Update intelligence sources)')
-                print('threat_intel.py -t    --table   (Show table)')
-                print('threat_intel.py -t max_rows    --table row_amount   (Show table and specify max amount of rows)')
-                print('threat_intel.py -p    --poc_github   (Show POC code from github)')
-                print('threat_intel.py -a    --all   (Show all)')
+                print('watchkeeper.py -u    --update   (Update intelligence sources)')
+                print('watchkeeper.py -t    --table   (Show table)')
+                print('watchkeeper.py -t max_rows    --table row_amount   (Show table and specify max amount of rows)')
+                print('watchkeeper.py -p    --poc_github   (Show POC code from github)')
+                print('watchkeeper.py -a    --all   (Show all)')
             if current in ('-u', '--update_intel'):
                 update_intel()
             if current in ('-t', '--table'):
@@ -79,6 +79,6 @@ def main(argv):
                 show_feed(int(currentvaule))
     except getopt.error as err:
         print (str(err))
-        print ('example: ./threat_intel.py -h')
+        print ('example: ./watchkeeper.py -h')
 if __name__ == "__main__":
     main(sys.argv[1:])
