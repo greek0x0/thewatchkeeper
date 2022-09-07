@@ -3,7 +3,7 @@
 
 Clone this repository
 ```
-git clone https://github.com/greek0x0/threat_intel
+git clone https://github.com/greek0x0/thewatchkeeper
 ```
 Make the python script executable
 Run it with the `-h` to see the available options
