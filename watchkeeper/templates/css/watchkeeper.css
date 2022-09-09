@@ -1,0 +1,99 @@
+body {
+  font-size: 1.8em;
+  background-color: black;
+}
+.sec {
+	display: block;
+	top:50%;
+	left:50%;
+	margin-top: 5%;
+	margin-left: 5%;
+	margin-right: auto;
+	margin-bottom: 20px;
+}
+.sec2 {
+	display:block;
+	left: 50%;
+	margin-left: 5%;
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+.accordion .post-container .post-content {
+  width: 100%;
+  color: white;
+  -webkit-transition: all 0.2s ease-in-out;
+  transition: all 0.2s ease-in-out;
+  opacity: 0;
+  height: auto;
+  max-height: 0;
+  overflow: hidden;
+}
+
+.accordion .post-container.active .post-content {
+  opacity: 1;
+  height: auto;
+  max-height: initial;
+
+  border: 0.1rem solid #1c03df;
+  border-radius: .4rem;
+
+  padding: 6px;
+  margin-bottom: 6px;
+}
+
+.accordion {
+  margin: 6px;
+}
+
+.accordion .post-button {
+  cursor: pointer;
+}
+
+.accordion span.badge {
+  background-color: #2901de;
+  border: 0.1rem solid #2901de;
+  border-radius: .4rem;
+  color: white;
+  display: inline-block;
+  font-size: 1.1rem;
+  font-weight: 700;
+  height: 2rem;
+  letter-spacing: .1rem;
+  line-height: 2rem;
+  padding: 0 0.5rem;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  cursor: auto;
+}
+
+.accordion .post-button a {
+  font-size: 1.5em;
+  vertical-align: middle;
+  margin-left: 6px;
+}
+
+.button-black {
+  background-color: white;
+  border-color: #2901de;
+}
+
+.button-black.button-outline {
+  background-color: transparent;
+  color: white;
+}
+
+a {
+  color: #2901de;
+}
+
+pre {
+  border-left: 0.3rem solid #1c03df;
+}
+
+h5 {
+  margin-bottom: 2px !important;
+  margin-top: 2px !important;
+  padding-left: 6px !important;
+  padding-right: 6px !important;
+}

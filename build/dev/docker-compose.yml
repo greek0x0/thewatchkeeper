@@ -1,0 +1,15 @@
+version: "2"
+services:
+  watchkeeper:
+    build:
+      args:
+        uid: ${UID}
+        gid: ${GID}
+      context: ../..
+      dockerfile: build/dev/Dockerfile
+    image: watchkeeper:dev
+    volumes:
+      - ../..:/code
+      - ../..:/opt/watchkeeper
+      - ~/.bash_history.watchkeeper:/home/watchkeeper/.bash_history
+    command: "bash -c 'exec python3 run.py feeds subscriptions.xml'"

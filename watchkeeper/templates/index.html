@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>the watchkeeper</title>
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300italic,700,700italic">
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/milligram.min.css">
+  <link rel="stylesheet" href="css/watchkeeper.css" />
+
+  <script src="js/watchkeeper.js"></script>
+</head>
+<body>
+  <h1 class='sec2'>Watchkeeper Dashboard</h1>
+  <div id="root">
+  </div>
+  <script type="module">
+    import { h, html, Component, render } from '/js/preact-index.js';
+
+    const CategoryIcon = (props) => {
+      const { category, categoryIcon } = props;
+
+      if (!categoryIcon) {
+        return '';
+      } else {
+        return (
+          html`<span title=${category}>${categoryIcon}</span>`
+        );
+      }
+    }
+
+    function siteCategory(row) {
+      if (!row.site_category_icon) {
+        return '';
+      } else {
+        return html` <span>${row.site_category_icon}<span>`;
+      }
+    }
+
+    const PostsList = (props) => {
+      const { postsData } = props;
+
+      const rows = postsData.map((row, index) => {
+        let contentDiv = h('div', {innerHTML: row.content, className: 'post-content'});
+
+        return (
+          html`<div className="post-container" key=${index}>
+            <h5 className="post-button button button-outline button-black">
+              ${row.title} | ${row.site} <${CategoryIcon} category=${row.site_category} categoryIcon=${row.site_category_icon} /> <span className="badge">${row.formattedDate}</span> <a href=${row.url} target="blank" rel="noreferrer noopener">🌐</a>
+            </h5>
+            ${contentDiv}
+          </div>`
+        );
+      });
+
+      return (
+        html`<div className="accordion">
+          ${rows}
+        </div>`
+      );
+    }
+
+    class App extends Component {
+
+      state = {
+        posts: [],
+      }
+
+      // TODO: check if best place to put this logic. use https://reactjs.org/docs/hooks-reference.html#useeffect
+      constructor(props) {
+        super(props);
+        read(this.onPostsRead);
+      }
+
+      onPostsRead = (postsRead) => {
+        const { posts } = this.state;
+
+        this.setState({
+          posts: postsRead
+        });
+
+        // Note: this would add it multiple times, but now is not a valid scenario
+        initAccordion('.accordion');
+      }
+
+      render() {
+        const { posts } = this.state;
+
+        return (
+          html`<div className="container">
+            <${PostsList} postsData=${posts} />
+          </div>`
+        );
+      }
+    }
+
+    render(html`<${App} />`, document.getElementById('root'));
+
+  </script>
+
+</body>
+</html>
