@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<opml version="1.0">
+    <head>
+        <title>Threat Intelligence</title>
+    </head>
+    <body>
+        <outline text="Threat Intelligence" title="threat intelligence">
+		<outline type="rss" text="Schneier on Security" title="Schneier on Security" xmlUrl="http://www.schneier.com/blog/index.rdf" htmlUrl="https://www.schneier.com"/>
+		<outline type="rss" text="Securelist" title="Securelist" xmlUrl="https://securelist.com/feed/" htmlUrl="https://securelist.com"/>
+		<outline type="rss" text="Darknet" title="Darknet" xmlUrl="http://feeds.feedburner.com/darknethackers" htmlUrl="https://www.darknet.org.uk"/>
+		<outline type="rss" text="ZDNet | Security" title="ZDNet | Security" xmlUrl="http://www.zdnet.com/blog/security/rss" htmlUrl="https://www.zdnet.com/"/>
+		<outline type="rss" text="Trend Micro Research, News and Perspectives" title="Trend Micro Research, News and Perspectives" xmlUrl="http://feeds.trendmicro.com/TrendMicroSimplySecurity" htmlUrl="http://feed.informer.com/digests/G5HRN3DTV4/feeder"/>
+		<outline type="rss" text="Secureworks Counter Threat Unit (CTU) Research" title="Secureworks Counter Threat Unit (CTU) Research" xmlUrl="https://www.secureworks.com/rss?feed=research" htmlUrl="https://www.secureworks.com/research"/>
+		<outline type="rss" text="The Hacker News" title="The Hacker News" xmlUrl="http://thehackernews.com/feeds/posts/default" htmlUrl="https://thehackernews.com/"/>
+		<outline type="rss" text="@ido_cohen2 Tweets with Links" title="@ido_cohen2 Tweets with Links" xmlUrl="https://twitter.com/timelineArticles/ido_cohen2/enterprise/securityalliance" htmlUrl="https://twitter.com/ido_cohen2"/>
+		<outline type="rss" text="TrendLabs Security Intelligence Blog" title="TrendLabs Security Intelligence Blog" xmlUrl="http://feeds.trendmicro.com/Anti-MalwareBlog/" htmlUrl="https://blog.trendmicro.com/trendlabs-security-intelligence"/>
+		<outline type="rss" text="@ido_cohen2 Tweets" title="@ido_cohen2 Tweets" xmlUrl="https://twitter.com/timeline/ido_cohen2/enterprise/securityalliance" htmlUrl="https://twitter.com/ido_cohen2"/>
+		<outline type="rss" text="@darktracer_int Tweets" title="@darktracer_int Tweets" xmlUrl="https://twitter.com/timeline/darktracer_int/enterprise/securityalliance" htmlUrl="https://twitter.com/darktracer_int"/>
+		<outline type="rss" text="Dark Reading" title="Dark Reading" xmlUrl="http://www.darkreading.com/rss/all.xml" htmlUrl="https://www.darkreading.com"/>
+		<outline type="rss" text="BleepingComputer" title="BleepingComputer" xmlUrl="http://www.bleepingcomputer.com/feed/" htmlUrl="https://www.bleepingcomputer.com/"/>
+	</outline>
+	<outline text="Vulnerabilities" title="vulnerabilities">
+		<outline type="rss" text="Exploit-DB.com RSS Feed" title="Exploit-DB.com RSS Feed" xmlUrl="https://www.exploit-db.com/rss.xml" htmlUrl="https://www.exploit-db.com"/>
+		<outline type="rss" text="The Exploit Database - CXSecurity.com" title="The Exploit Database - CXSecurity.com" xmlUrl="http://securityreason.com/rss/ExploitAlert" htmlUrl="https://cxsecurity.com/wlb/"/>
+		<outline type="rss" text="Vulnerabilities – Threatpost" title="Vulnerabilities – Threatpost" xmlUrl="https://threatpost.com/category/vulnerabilities/feed/" htmlUrl="https://threatpost.com"/>
+		<outline type="rss" text="RiskIQ" title="RiskIQ" xmlUrl="https://www.riskiq.com/feed/" htmlUrl="https://www.riskiq.com"/>
+		<outline type="rss" text="CXSECURITY Database RSS Feed - CXSecurity.com" title="CXSECURITY Database RSS Feed - CXSecurity.com" xmlUrl="http://securityreason.com/rss/SecurityAlert" htmlUrl="https://cxsecurity.com/wlb/"/>
+		<outline type="rss" text="Code Execution Files ≈ Packet Storm" title="Code Execution Files ≈ Packet Storm" xmlUrl="http://rss.packetstormsecurity.com/files/tags/code_execution/" htmlUrl="https://packetstormsecurity.com/"/>
+		<outline type="rss" text="JVNRSS Feed - Update Entry" title="JVNRSS Feed - Update Entry" xmlUrl="https://jvn.jp/en/rss/jvn.rdf" htmlUrl="https://jvn.jp/en/"/>
+		<outline type="rss" text="VulDB Updates" title="VulDB Updates" xmlUrl="https://vuldb.com/?rss.updates" htmlUrl="https://vuldb.com"/>
+		<!-- Additional Sources Added by me, can be removed if needed -->
+		<outline type="rss" text="Zero Day Initiative Unpublished" title="Zero Day Initiative" xmlUrl="https://www.zerodayinitiative.com/rss/upcoming/" htmlUrl="https://www.zerodayinitiative.com/"/>
+		<outline type="rss" text="Zero Day Initiative Published" title="Zero Day Initiative" xmlUrl="https://www.zerodayinitiative.com/rss/published/" htmlUrl="https://www.zerodayinitiative.com/"/>
+		<outline type="rss" text="Threat Sweeper" title="Threat Sweeper" xmlUrl="https://politepol.com/fd/8pKf6eJTI85r" htmlUrl="https://politepol.com/fd/8pKf6eJTI85r"/>
+	   </outline>
+    </body>
+</opml>

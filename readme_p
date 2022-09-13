@@ -1,0 +1,17 @@
+mkdir threat_intelligence
+mv subscriptions.opml threat_intelligence
+python3 run.py threat_intelligence subscriptions.opml
+
+for scheduled task:
+python3 task.py
+
+
+
+run server:
+python3 -m http.server 80
+(Not needed if using notion or Jira APIs)
+
+
+
+site data in threat_intelligence folder
+json entries stored as timestamps

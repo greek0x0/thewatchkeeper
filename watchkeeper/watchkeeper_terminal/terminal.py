@@ -29,8 +29,7 @@ def check_install():
     if do_exists_ == True:
         pass
     else:
-        os.system('sudo apt-get install csvkit')
-        check_install()
+        pass
 check_install() 
 
 def conf_folder():
